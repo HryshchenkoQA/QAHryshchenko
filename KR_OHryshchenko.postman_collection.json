@@ -1,0 +1,353 @@
+{
+	"info": {
+		"_postman_id": "589bf8b8-41ab-4c47-9d90-c2f1a6cd741f",
+		"name": "KR_OHryshchenko",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25063640"
+	},
+	"item": [
+		{
+			"name": "Open User Settings",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Origin",
+						"value": "https://app.centredo.com"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "uk"
+					},
+					{
+						"key": "Referer",
+						"value": "https://app.centredo.com/"
+					},
+					{
+						"key": "Host",
+						"value": "api.centredo.com"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Safari/605.1.15"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer d53e1e87-f9bb-49d8-83af-4a9b9ddd32a6"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					}
+				],
+				"url": {
+					"raw": "https://api.centredo.com/api/v1/user/profile",
+					"protocol": "https",
+					"host": [
+						"api",
+						"centredo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change first name",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer d53e1e87-f9bb-49d8-83af-4a9b9ddd32a6"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en"
+					},
+					{
+						"key": "Host",
+						"value": "api.centredo.com"
+					},
+					{
+						"key": "Origin",
+						"value": "https://app.centredo.com"
+					},
+					{
+						"key": "Content-Length",
+						"value": "154"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Safari/605.1.15"
+					},
+					{
+						"key": "Referer",
+						"value": "https://app.centredo.com/"
+					},
+					{
+						"key": "mailbox",
+						"value": "86407993-227b-4022-bd85-5bc1e34306ae"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\":\"1\",\"lastName\":\"a\",\"locale\":\"en\",\"timezone\":\"Europe/Kyiv\",\"phone\":\"+380954011715\",\"displayExactDate\":true,\"dateLocale\":\"uk_UA\",\"avatar\":null}"
+				},
+				"url": {
+					"raw": "https://api.centredo.com/api/v1/user/profile",
+					"protocol": "https",
+					"host": [
+						"api",
+						"centredo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update signature",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer d53e1e87-f9bb-49d8-83af-4a9b9ddd32a6"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en"
+					},
+					{
+						"key": "Host",
+						"value": "api.centredo.com"
+					},
+					{
+						"key": "Origin",
+						"value": "https://app.centredo.com"
+					},
+					{
+						"key": "Content-Length",
+						"value": "14510"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Safari/605.1.15"
+					},
+					{
+						"key": "Referer",
+						"value": "https://app.centredo.com/"
+					},
+					{
+						"key": "mailbox",
+						"value": "86407993-227b-4022-bd85-5bc1e34306ae"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "data:image/png;base64,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V4cmSP9EPc8ygWETyPegRGBhCqTDemQ692fl6jbLdGk+7D/PsFYJlBbMSNQgWi4PNG0btxJoPSYdWfrPsQfiEyNN3EpckeVrM5XnlsrzOOWVFGV5eUYyzrspHW6GxUoZaZYC2mAV3HjgedGqnLGhsnn7p6fq52GZAAECBAisscDleW4rT6JvusYVqWDWAmtjG2S07BEZUS6v1piYEoAeOGtEOxKYI4F15+g4DkOAwIgLbN+4TTPilzOSp7+WtsHGLY21pCVPFoGhEsidAIkAAQIECAynQP5yoa2f2m04z9ZZEVgl0PbBXbXVEgECBAgQmEeBPN836QW0eZ5ydd63No9n79Brs4AAa21ufddOgACBIRdIJ/XrnGL+kLcrdb22oWuLFQJDIiDAGpKGcBoECBAgMFmgvNw3o1hHZUve1jCWbs7/Pzq+bEaAAAECBAgQIDBbgQRZdyr/zE7m/jhrtoj2I0CAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQILDWCPx/WXwijD7Wud8AAAAASUVORK5CYII="
+				},
+				"url": {
+					"raw": "https://api.centredo.com/api/v1/user/signature",
+					"protocol": "https",
+					"host": [
+						"api",
+						"centredo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"signature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Password",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer d53e1e87-f9bb-49d8-83af-4a9b9ddd32a6"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en"
+					},
+					{
+						"key": "Host",
+						"value": "api.centredo.com"
+					},
+					{
+						"key": "Origin",
+						"value": "https://app.centredo.com"
+					},
+					{
+						"key": "Content-Length",
+						"value": "60"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Safari/605.1.15"
+					},
+					{
+						"key": "Referer",
+						"value": "https://app.centredo.com/"
+					},
+					{
+						"key": "mailbox",
+						"value": "86407993-227b-4022-bd85-5bc1e34306ae"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"oldPassword\":\"gqw5ZibTa1602\",\"newPassword\":\"ZimaLeto12@!\"}"
+				},
+				"url": {
+					"raw": "https://api.centredo.com/api/v1/user/password",
+					"protocol": "https",
+					"host": [
+						"api",
+						"centredo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Users avatar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Origin",
+						"value": "https://app.centredo.com"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en"
+					},
+					{
+						"key": "Referer",
+						"value": "https://app.centredo.com/"
+					},
+					{
+						"key": "Host",
+						"value": "api.centredo.com"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Safari/605.1.15"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer d53e1e87-f9bb-49d8-83af-4a9b9ddd32a6"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "mailbox",
+						"value": "86407993-227b-4022-bd85-5bc1e34306ae"
+					}
+				],
+				"url": {
+					"raw": "Update Users avatar",
+					"host": [
+						"Update Users avatar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
